@@ -1,0 +1,11 @@
+.logo {
+    color: var(--logo-black-color);
+    text-decoration: none;
+    font-family: var(--logo-font-family-text);
+    @include font(26px, 700, 31px);
+    letter-spacing: 0.03em;
+}
+
+.logo__web {
+    color: var(--accent-color);
+}

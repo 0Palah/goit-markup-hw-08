@@ -1,0 +1,29 @@
+.button-primary {
+    background-color: var(--accent-color);
+    border-radius: 4px;
+    padding: 10px 28px;
+    min-width: 200px;
+    border: 1px solid transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+
+    @include font(16px, 700, 30px);
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--text-white-color);
+    cursor: pointer;
+
+    transition: background-color var(--tran-dur-and-tim-fun);
+
+    &:hover,
+    &:focus {
+        background-color: var(--button-hover-color);
+    }
+
+    &:active {
+        color: var(--accent-color);
+        background-color: var(--primary-background-color);
+        border-color: var(--accent-color);
+    }
+}

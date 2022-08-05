@@ -1,0 +1,34 @@
+.clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    .link {
+        display: inline-block;
+        width: 170px;
+        height: 92px;
+        padding: 16px 32px;
+        border: 1px solid var(--icon-primary-color);
+        border-radius: 4px;
+        color: var(--icon-primary-color);
+        outline: none;
+
+        transition: color var(--tran-dur-and-tim-fun), border-color var(--tran-dur-and-tim-fun);
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+            border: 1px solid var(--accent-color);
+        }
+    }
+
+    .icon {
+        fill: currentColor;
+    }
+}
+
+
+
+
+
+
