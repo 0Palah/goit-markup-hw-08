@@ -682,6 +682,11 @@ img {
 .speciality {
   padding-top: 47px;
 }
+@media screen and (max-width: 1199px) {
+  .speciality {
+    display: none;
+  }
+}
 
 .speciality-list {
   display: flex;
