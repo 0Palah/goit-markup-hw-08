@@ -1,108 +1,108 @@
-// .footer {
-//     background-color: var(--footer-background-color);
-//     padding-top: 60px;
-//     padding-bottom: 60px;
+.footer {
+    background-color: var(--footer-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 
-//     .container {
-//         display: flex;
-//         align-items: baseline;
-//     }
+    .container {
+        display: flex;
+        align-items: baseline;
+    }
 
-//     .left {
-//         width: 231px;
-//         margin-right: 70px;
-//     }
-// }
+    .left {
+        width: 231px;
+        margin-right: 70px;
+    }
+}
 
-// .logo_theme-dark {
-//     color: var(--text-white-color);
-// }
+.logo_theme-dark {
+    color: var(--text-white-color);
+}
 
-// .footer-address {
-//     margin-top: 20px;
-//     @include font(14px, 400, 24px);
-//     font-style: normal;
-// }
+.footer-address {
+    margin-top: 20px;
+    @include font(14px, 400, 24px);
+    font-style: normal;
+}
 
-// .footer-location {
-//     color: var(--text-white-color);
-// }
+.footer-location {
+    color: var(--text-white-color);
+}
 
-// .footer-contacts {
-//     margin-top: 9px;
+.footer-contacts {
+    margin-top: 9px;
 
-//     .link {
-//         color: var(--mail-tel-color);
+    .link {
+        color: var(--mail-tel-color);
     
-//         transition: color var(--tran-dur-and-tim-fun);
+        transition: color var(--tran-dur-and-tim-fun);
 
-//         &:hover,
-//         &:focus {
-//             color: var(--accent-color);
-//         }
-//     }
-// }
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+    }
+}
 
-// .join {
-//     margin-right: auto;
-// }
+.join {
+    margin-right: auto;
+}
 
-// .join .title,
-// .subscribe .title {
-//     @include font(14px, 700, 16px);
-//     color: var(--text-white-color);
-//     text-transform: uppercase;
-//     margin-bottom: 20px;
-// }
+.join .title,
+.subscribe .title {
+    @include font(14px, 700, 16px);
+    color: var(--text-white-color);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
 
-// .footer-social {
-//     display: flex;
-//     flex-wrap: wrap;
-//     gap: 10px;
+.footer-social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
 
-//     .link {
-//         display: flex;
-//         align-items: center;
-//         justify-content: center;
-//         width: 44px;
-//         height: 44px;
-//         border-radius: 50%;
-//         background-color: var(--footer-link-bg-color);
-//         color: var(--text-white-color);
+    .link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background-color: var(--footer-link-bg-color);
+        color: var(--text-white-color);
 
-//         transition: background-color var(--tran-dur-and-tim-fun);
+        transition: background-color var(--tran-dur-and-tim-fun);
 
-//         &:hover,
-//         &:focus {
-//             background-color: var(--accent-color);
-//         }
-//     }
+        &:hover,
+        &:focus {
+            background-color: var(--accent-color);
+        }
+    }
 
-//     .icon {
-//         fill: currentColor;
-//     }
-// }
+    .icon {
+        fill: currentColor;
+    }
+}
 
-// .subscribe .botom {
-//     display: flex;
-//     align-items: center;
-//     width: 570px;
-// }
+.subscribe .botom {
+    display: flex;
+    align-items: center;
+    width: 570px;
+}
 
-// .subscribe-input {
-//     width: 358px;
-//     height: 50px;
-//     margin-right: 12px;
-//     padding: 15px 16px;
-//     border: 1px solid rgba(255, 255, 255, 0.3);
-//     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-//     border-radius: 4px;
-//     background-color: var(--footer-background-color);
+.subscribe-input {
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--footer-background-color);
     
-//     @include font(16px, 400, 20px);
-//     color: var(--mail-tel-color);
-// }
+    @include font(16px, 400, 20px);
+    color: var(--mail-tel-color);
+}
 
-// .button-primary {
-//     fill: currentColor;
-// }
+.button-primary {
+    fill: currentColor;
+}

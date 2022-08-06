@@ -1,97 +1,30 @@
 .hero {
-    max-width: $mobile-width;
+    max-width: 1600px;
+    height: 600px;
     margin-left: auto;
-    margin-right: auto;       
-    padding: 118px 0;
-
-
+    margin-right: auto;
+    padding: 200px 0;
     background-color: var(--hero-background-color);
     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/hero/bagraund-sm.jpg);
+        url(../images/hero-img.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
-
-    
-    @media screen  and (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: 
-                linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url(../images/hero/bagraund-sm@2x.jpg);
-                background-size: cover;
-    }
-
-    // @media screen and (min-width: $tablet-width ) {
-    //     max-width: $tablet-width;
-    //     background-image:
-    //             linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    //             url(../images/hero/bagraund-md.jpg);
-    //             background-size: cover;
-    // }
-
-    // @media screen and ( min-width: $tablet-width ) and (min-device-pixel-ratio: 2),
-    //     (min-width: $tablet-width ) and (-webkit-min-device-pixel-ratio: 2),
-    //     (min-width: $tablet-width ) and (min-resolution: 192dpi),
-    //     (min-width: $tablet-width ) and (min-resolution: 2dppx) {
-    //         background-image: 
-    //             linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    //             url(../images/hero/bagraund-md@2x.jpg);
-    //             background-size: cover;
-    // }
-
-    // @media screen and (min-width: $desktop-width ) {
-    //     max-width: 1600px;
-    //     height: 600px;
-    //     padding: 200px 0;
-    //     background-image:
-    //         linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    //         url(../images/hero/bagraund-lg.jpg);
-    // }
-
-    // @media screen and (min-width: $desktop-width ) and (min-device-pixel-ratio: 2),
-    //     (min-width: $tablet-width ) and (-webkit-min-device-pixel-ratio: 2),
-    //     (min-width: $tablet-width ) and (min-resolution: 192dpi),
-    //     (min-width: $tablet-width ) and (min-resolution: 2dppx) {
-    //         background-image:
-    //             linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    //             url(../images/hero/bagraund-lg@2x.jpg);
-    // }
-
-
-
-
-
-
 
     .container {
         text-align: center;
     }
 }
 
-
-//     background-color: var(--hero-background-color);
-//     background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-//         url(../images/hero-img.jpg);
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     background-size: cover;
-
-
-
 .hero-title {
-    max-width: 360px;
-    margin: 0 auto 30px;
+    width: 696px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
+    @include font(44px, 900, 60px);
     text-align: center;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--text-white-color);
-    @include font(26px, 900, 42px);
-    letter-spacing: 0.06em;
-    
-    @media screen and ( min-width: $desktop-width ) {
-        @include font(44px, 900, 60px);
-        max-width: 696px;
-    }
 }

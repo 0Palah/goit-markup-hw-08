@@ -1,46 +1,45 @@
+.filter {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 50px;
+}
 
-// .filter {
-//     display: flex;
-//     justify-content: center;
-//     gap: 8px;
-//     margin-bottom: 50px;
-// }
+.filter-button {
+    padding: 6px 22px;
+    cursor: pointer;
 
-// .filter-button {
-//     padding: 6px 22px;
-//     cursor: pointer;
+    background: var(--filter-button-color);
+    border: none;
+    border-radius: 4px;
+    border: 1px solid transparent;
 
-//     background: var(--filter-button-color);
-//     border: none;
-//     border-radius: 4px;
-//     border: 1px solid transparent;
+    color: inherit;
+    @include font(16px, 500, 26px);
+    text-align: center;
+    letter-spacing: 0.03em;
 
-//     color: inherit;
-//     @include font(16px, 500, 26px);
-//     text-align: center;
-//     letter-spacing: 0.03em;
+    transition: color var(--tran-dur-and-tim-fun), background-color var(--tran-dur-and-tim-fun), box-shadow var(--tran-dur-and-tim-fun);
 
-//     transition: color var(--tran-dur-and-tim-fun), background-color var(--tran-dur-and-tim-fun), box-shadow var(--tran-dur-and-tim-fun);
+    &:hover,
+    &:focus {
+        background-color: var(--accent-color);
+        color: var(--text-white-color);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+        }
 
-//     &:hover,
-//     &:focus {
-//         background-color: var(--accent-color);
-//         color: var(--text-white-color);
-//         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-//             0px 2px 2px rgba(0, 0, 0, 0.12);
-//         }
-
-//     &.current {
-//         background-color: var(--accent-color);
-//         color: var(--text-white-color);
-//         }
+    &.current {
+        background-color: var(--accent-color);
+        color: var(--text-white-color);
+        }
         
-//     &:active {
-//         color: var(--accent-color);
-//         background-color: var(--primary-background-color);
-//         border-color: var(--accent-color);
-//     }
-// }
+    &:active {
+        color: var(--accent-color);
+        background-color: var(--primary-background-color);
+        border-color: var(--accent-color);
+    }
+}
 
 
 
