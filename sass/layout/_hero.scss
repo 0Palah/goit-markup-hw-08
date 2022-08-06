@@ -1,21 +1,74 @@
 .hero {
-        max-width: $mobile-width;
-        margin-left: auto;
-        margin-right: auto;       
-        padding: 118px 0;
-        background-color: var(--hero-background-color);
-        background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
-        .container {text-align: center;}
-        
-        @media screen and (min-width: $tablet-width ) {
-            max-width: $tablet-width;
-        }
-        
-        @media screen and (min-width: $desktop-width ) {
-            max-width: 1600px;
-            height: 600px;
-            padding: 200px 0;
-        }
+    max-width: $mobile-width;
+    margin-left: auto;
+    margin-right: auto;       
+    padding: 118px 0;
+
+
+    background-color: var(--hero-background-color);
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(../images/hero/bagraund-sm.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+    
+    @media screen  and (min-device-pixel-ratio: 2),
+        (-webkit-min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: 
+                linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url(../images/hero/bagraund-sm@2x.jpg);
+                background-size: cover;
+    }
+
+    // @media screen and (min-width: $tablet-width ) {
+    //     max-width: $tablet-width;
+    //     background-image:
+    //             linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    //             url(../images/hero/bagraund-md.jpg);
+    //             background-size: cover;
+    // }
+
+    // @media screen and ( min-width: $tablet-width ) and (min-device-pixel-ratio: 2),
+    //     (min-width: $tablet-width ) and (-webkit-min-device-pixel-ratio: 2),
+    //     (min-width: $tablet-width ) and (min-resolution: 192dpi),
+    //     (min-width: $tablet-width ) and (min-resolution: 2dppx) {
+    //         background-image: 
+    //             linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    //             url(../images/hero/bagraund-md@2x.jpg);
+    //             background-size: cover;
+    // }
+
+    // @media screen and (min-width: $desktop-width ) {
+    //     max-width: 1600px;
+    //     height: 600px;
+    //     padding: 200px 0;
+    //     background-image:
+    //         linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    //         url(../images/hero/bagraund-lg.jpg);
+    // }
+
+    // @media screen and (min-width: $desktop-width ) and (min-device-pixel-ratio: 2),
+    //     (min-width: $tablet-width ) and (-webkit-min-device-pixel-ratio: 2),
+    //     (min-width: $tablet-width ) and (min-resolution: 192dpi),
+    //     (min-width: $tablet-width ) and (min-resolution: 2dppx) {
+    //         background-image:
+    //             linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    //             url(../images/hero/bagraund-lg@2x.jpg);
+    // }
+
+
+
+
+
+
+
+    .container {
+        text-align: center;
+    }
 }
 
 

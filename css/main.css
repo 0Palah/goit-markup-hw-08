@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
   --logo-font-family-text: "Raleway", "Ubuntu", sans-serif;
   --primary-text-color: #212121;
@@ -75,11 +76,23 @@ img {
 }
 
 .section-title {
+  text-align: center;
+  margin-bottom: 50px;
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
-  text-align: center;
-  margin-bottom: 50px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.18;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .section-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+  }
 }
 
 .container {
@@ -164,10 +177,10 @@ img {
   margin-right: auto;
   padding: 118px 0;
   background-color: var(--hero-background-color);
-  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
-}
-.hero .container {
-  text-align: center;
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bagraund-lg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -180,6 +193,14 @@ img {
     height: 600px;
     padding: 200px 0;
   }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/.jpg);
+  }
+}
+.hero .container {
+  text-align: center;
 }
 
 .hero-title {
@@ -248,10 +269,11 @@ img {
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
+  text-align: center;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .features-list__title {
-    text-align: center;
+    text-align: start;
   }
 }
 
@@ -260,4 +282,54 @@ img {
   font-weight: inherit;
   line-height: 1.71;
   color: var(--secondary-text-color);
+}
+
+.speciality {
+  padding-top: 47px;
+}
+@media screen and (max-width: 1199px) {
+  .speciality {
+    display: none;
+  }
+}
+
+.speciality-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.speciality-list__item {
+  position: relative;
+}
+
+.speciality-list__text {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  padding: 27px 10px;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: var(--text-white-color);
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.team {
+  background-color: var(--secondary-background-color);
+  text-align: center;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Картки працівників */
+.team-item {
+  background-color: var(--primary-background-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }/*# sourceMappingURL=main.css.map */

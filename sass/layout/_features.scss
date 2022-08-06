@@ -41,9 +41,10 @@
     @include font(14px, 700, 16px);
     text-transform: uppercase;
     margin-bottom: 10px;
+    text-align: center;
 
-    @media screen and (max-width: $tablet-width - 1px ) {
-        text-align: center;
+    @media screen and (min-width: $tablet-width ) {
+        text-align: start;
     }
 }
 
