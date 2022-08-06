@@ -1,5 +1,7 @@
 .section__features {
-    padding-bottom: 47px;
+    @media screen and ( min-width: $desktop-width ) {
+        padding-bottom: 47px;
+    }
 }
 
 .features-list {
@@ -9,14 +11,21 @@
 }
 
 .features-list__item {
-    width: calc((100% - 90px) / 4);
+    width: 100%;
+
+    @media screen and (min-width: $tablet-width ) {
+        width: calc((100% - 30px) / 2);
+    }
+
+    @media screen and (min-width: $desktop-width ) {
+        width: calc((100% - 90px) / 4);
+    }
 }
 
 .features-list__card {
     display: flex;
-    align-items: center;
     justify-content: center;
-    height: 120px;
+    padding: 25px 0;
 
     border-radius: 4px;
     margin-bottom: 30px;
@@ -32,6 +41,10 @@
     @include font(14px, 700, 16px);
     text-transform: uppercase;
     margin-bottom: 10px;
+
+    @media screen and (max-width: $tablet-width - 1px ) {
+        text-align: center;
+    }
 }
 
 .features-list__text {
