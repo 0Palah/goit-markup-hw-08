@@ -141,8 +141,15 @@ img {
   margin-right: auto;
 }
 
-.site-nav {
-  display: flex;
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: flex;
+  }
 }
 
 .site-nav__item {
@@ -178,6 +185,16 @@ img {
   background-color: var(--accent-color);
 }
 
+@media screen and (max-width: 767px) {
+  .contacts-nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .contacts-nav {
+    display: block;
+  }
+}
 @media screen and (min-width: 1200px) {
   .contacts-nav {
     display: flex;

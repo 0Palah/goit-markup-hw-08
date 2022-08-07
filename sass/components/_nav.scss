@@ -10,7 +10,15 @@
 }
 
 .site-nav {
-    display: flex;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+        
+    @media screen and (min-width: $tablet ) {
+        display: flex;
+    }
+
 }
 
 .site-nav__item{
@@ -50,6 +58,13 @@
 }
 
 .contacts-nav {
+    @media screen and (max-width: 767px ) {
+            display: none;
+    }
+
+    @media screen and (min-width: $tablet ) {
+        display: block ;           
+    }
     
     @media screen and (min-width: $desktop ) {
         display: flex;
