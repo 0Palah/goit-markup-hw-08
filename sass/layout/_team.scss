@@ -21,20 +21,23 @@
         width: calc((100% - 30px) / 2);
     }
 
+    @media screen and (min-width: $desktop ) {
+        width: calc((100% - 90px) / 4);
+    }
     
 }
 
 .team-card-bottom {
-    
-    padding: 30px 32px;
+    padding: 30px 15px 24px;
 
-    padding: 30px 32px;
+    @media screen and (min-width: $desktop ) {
+        padding: 30px 15px;
+    }
 }
 
 /* Імена працівників */
 .team-item-title {
     @include font(16px, 500, 19px);
-    text-align: center;
     margin-bottom: 10px;
 }
 

@@ -421,6 +421,7 @@ img {
 .social-links {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 10px;
 }
 .social-links .link {
@@ -742,10 +743,19 @@ img {
     width: calc((100% - 30px) / 2);
   }
 }
+@media screen and (min-width: 1200px) {
+  .team-item {
+    width: calc((100% - 90px) / 4);
+  }
+}
 
 .team-card-bottom {
-  padding: 30px 32px;
-  padding: 30px 32px;
+  padding: 30px 15px 24px;
+}
+@media screen and (min-width: 1200px) {
+  .team-card-bottom {
+    padding: 30px 15px;
+  }
 }
 
 /* Імена працівників */
@@ -753,7 +763,6 @@ img {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.19;
-  text-align: center;
   margin-bottom: 10px;
 }
 
