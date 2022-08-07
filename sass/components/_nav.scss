@@ -14,7 +14,7 @@
 }
 
 .site-nav__item{
-    padding-top: 32px;
+    position: relative;
 
     &:not(:last-child) {
         margin-right: 50px;
@@ -22,32 +22,38 @@
 }
 
 .site-nav__link {
+    display: block;
+    padding: 32px 0;
     @include font(14px, 500, 16px);
     letter-spacing: 0.02em;
     color: var(--primary-text-color);
 
     transition: color var(--tran-dur-and-tim-fun);
-
 }
 
 .site-nav__link_current {
     color: var(--accent-color);
+
 }
 
 .site-nav__link_current::after {
     content: "";
 
+    position: absolute;
+    bottom: 1px;
     display: block;
     width: 100%;
     height: 4px;
     border-radius: 2px;
-    margin-top: 28px;
 
     background-color: var(--accent-color);
 }
 
 .contacts-nav {
-    display: flex;
+    
+    @media screen and (min-width: $desktop ) {
+        display: flex;
+    }
 
     .smartphone {
          width: 10px;
@@ -57,7 +63,16 @@
 }
 
 .contacts-nav__item:not(:last-child) {
-    margin-right: 50px;
+
+    @media screen and (min-width: $tablet ) {
+            margin-bottom: 10px;
+        }
+
+    @media screen and (min-width: $desktop ) {
+        margin-right: 30px;
+        margin-bottom: 0;
+    }
+    
     }
 
 .contacts-nav__icon {
@@ -70,9 +85,13 @@
 .contacts-nav__link {
     display: flex;
     align-items: center;
-    @include font(14px, 500, 16px);
+    @include font(12px, 500, 14px);
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
 
     transition: color var(--tran-dur-and-tim-fun);
+
+    @media screen and (min-width: $desktop ) {
+        @include font(14px, 500, 16px);
+    }
 }
