@@ -225,11 +225,6 @@ img {
 .button-primary:hover, .button-primary:focus {
   background-color: var(--button-hover-color);
 }
-.button-primary:active {
-  color: var(--accent-color);
-  background-color: var(--primary-background-color);
-  border-color: var(--accent-color);
-}
 
 .backdrop {
   position: fixed;
@@ -485,11 +480,6 @@ img {
 .filter-button.current {
   background-color: var(--accent-color);
   color: var(--text-white-color);
-}
-.filter-button:active {
-  color: var(--accent-color);
-  background-color: var(--primary-background-color);
-  border-color: var(--accent-color);
 }
 
 .works {
