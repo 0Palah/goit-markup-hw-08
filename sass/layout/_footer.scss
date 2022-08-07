@@ -2,15 +2,37 @@
     background-color: var(--footer-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
+    text-align: center;
 
     .container {
-        display: flex;
-        align-items: baseline;
+
+        @media screen and (min-width: $tablet ) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: baseline;
+            justify-content: space-around;
+        }
+
+
+
+        @media screen and (min-width: $desktop ) {
+            text-align: start;
+            flex-direction: row;
+            justify-content: start;
+        }
+
+        // display: flex;
+        // align-items: baseline;
     }
 
-    .left {
-        width: 231px;
-        margin-right: 70px;
+    .contact-block {
+        display: block;
+
+        @media screen and (min-width: $desktop ) {
+            margin-right: 70px;
+        }
+
     }
 }
 
@@ -19,6 +41,7 @@
 }
 
 .footer-address {
+    display: block;
     margin-top: 20px;
     @include font(14px, 400, 24px);
     font-style: normal;
@@ -29,7 +52,11 @@
 }
 
 .footer-contacts {
-    margin-top: 9px;
+    margin-top: 8px;
+
+    @media screen and (min-width: $desktop ) {
+        margin-top: 9px;
+    }
 
     .link {
         color: var(--mail-tel-color);
@@ -44,7 +71,27 @@
 }
 
 .join {
-    margin-right: auto;
+    
+    margin-top: 60px;
+
+    @media screen and (min-width: $tablet ) {
+        margin-top: 0;
+    }
+
+    @media screen and (min-width: $desktop ) {
+        margin-right: auto;
+    }
+}
+
+
+.subscribe {
+    max-width: 100%;
+    margin-top: 60px;
+
+    @media screen and (min-width: $desktop ) {
+        margin-top: 0;
+    }
+    
 }
 
 .join .title,
@@ -57,7 +104,7 @@
 
 .footer-social {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
     gap: 10px;
 
     .link {
@@ -84,16 +131,26 @@
 }
 
 .subscribe .botom {
-    display: flex;
-    align-items: center;
-    width: 570px;
+   
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media screen and (min-width: $desktop) {
+        flex-direction: row;
+        width: 570px;
+    }
+
 }
 
 .subscribe-input {
-    width: 358px;
+    
+    width: 450px;
     height: 50px;
-    margin-right: 12px;
     padding: 15px 16px;
+    margin-bottom: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -101,7 +158,25 @@
     
     @include font(16px, 400, 20px);
     color: var(--mail-tel-color);
+
+    @media screen and (max-width: 479px ) {
+        width: calc(100vw - 30px);
+    }
+
+    @media screen and (min-width: $tablet) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 358px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        margin-bottom: 0;
+        margin-right: 12px;
+    }
 }
+
 
 .button-primary {
     fill: currentColor;
