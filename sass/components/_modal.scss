@@ -3,8 +3,8 @@
     top: 50%;
     left: 50%;
 
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     padding: 40px;
     background-color: #fff;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -16,12 +16,24 @@
     .backdrop.is-hidden & {
         transform: translate(-50%, -50%) scale(0.8);
         }
+
+    @media screen and (min-width: $desktop ) {
+        width: 528px;
+        height: 581px;
+    }
+
+
 }
 
 .modal-title {
-    @include font(20px, 700, 23px);
     text-align: center;
     margin-bottom: 12px;
+    @include font(20px, 700, 30px);
+
+    @media screen and (min-width: $desktop ) {
+        @include font(20px, 700, 23px);
+            
+    }
 }
 
 .contact-form {
@@ -96,9 +108,14 @@
     position: relative;
     margin: 0 auto 30px;
     padding-left: 23px;
-    @include font(14px, 400, 24px);
+    @include font(12px, 400, 14px);
     cursor: pointer;
     color: var(--secondary-text-color);
+
+    @media screen and (min-width: $desktop ) {
+        @include font(14px, 400, 24px);
+        
+    }
 }
 
 .user-policy-checkbox-frame {
@@ -135,8 +152,12 @@
 }
 
 .user-policy-checkbox-link {
-    @include font(14px, 400, 24px);
+    @include font(12px, 400, 14px);
     color: var(--accent-color);
+
+    @media screen and (min-width: $desktop ) {
+        @include font(14px, 400, 24px);
+    }
 }
 
 .button-primary__center {
