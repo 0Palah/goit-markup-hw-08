@@ -24,15 +24,16 @@
 
   <body class="body">
     <!-- Хедер -->
-    <header class="header">
+
+    <!-- <header class="header">
       <div class="container">
-        <!-- Головна навігація -->
+
         <nav class="header-nav">
-          <!-- Лого + Лінк "Головна сторінка" -->
+
           <a lang="en" href="./index.html" class="logo logo_theme-light">
             <span class="logo__web">Web</span>Studio</a>
     
-          <!--================================= Навігація =================================-->
+ 
           <ul class="site-nav list">
             <li class="site-nav__item"><a href="./index.html"
                 class="site-nav__link  link ">Студия</a></li>
@@ -41,7 +42,7 @@
           </ul>
         </nav>
     
-        <!--================================= Контакти =================================-->
+
         <ul class="contacts-nav list">
           <li class="contacts-nav__item item">
             <a href="mailto:info@devstudio.com" class="contacts-nav__link link ">
@@ -59,7 +60,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
 
     <!-- Мейн -->
     <main>
@@ -91,16 +92,41 @@
             <li class="works-item">
               <a href="#" class="link">
                 <div class="work-thumb">
-                  <img
-                    src="./images/img-port-1.jpg"
-                    alt="Ноутбук с открытой страницей сайта"
-                    width="370"
-                  />
-                  <div class="worck-overlay">
-                    <p class="text-overlay">
-                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
-                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
-                      компании или частном лице.
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/portfolio-1-lg.webp 1x, ./images/portfolio/portfolio-1-lg@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/portfolio-1-lg.jpg 1x, ./images/portfolio/portfolio-1-lg@2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/portfolio-1-md.webp 1x, ./images/portfolio/portfolio-1-md@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/portfolio-1-md.jpg 1x, ./images/portfolio/portfolio-1-md@2x.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio/portfolio-1-sm.webp 1x, ./images/portfolio/portfolio-1-sm@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio/portfolio-1-sm.jpg 1x, ./images/portfolio/portfolio-1-sm@2x.jpg 2x"
+                    />
+                    <img src="./images/portfolio/portfolio-1-sm.jpg" alt="Портрет человека" />
+                  </picture>
+                    <div class="worck-overlay">
+                      <p class="text-overlay">
+                        Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                        сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                        компании или частном лице.
                     </p>
                   </div>
                 </div>
@@ -113,11 +139,36 @@
             <li class="works-item">
               <a href="#" class="link">
                 <div class="work-thumb">
-                  <img
-                    src="./images/img-port-2.jpg"
-                    alt="Два баскетболиста соревнуются за мяч"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/portfolio-2-lg.webp 1x, ./images/portfolio/portfolio-2-lg@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/portfolio-2-lg.jpg 1x, ./images/portfolio/portfolio-2-lg@2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/portfolio-2-md.webp 1x, ./images/portfolio/portfolio-2-md@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/portfolio-2-md.jpg 1x, ./images/portfolio/portfolio-2-md@2x.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio/portfolio-2-sm.webp 1x, ./images/portfolio/portfolio-2-sm@2x.webp 2x"
+                      type="image/webp"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio/portfolio-2-sm.jpg 1x, ./images/portfolio/portfolio-2-sm@2x.jpg 2x"
+                    />
+                    <img src="./images/portfolio/portfolio-2-sm.jpg" alt="Портрет человека" />
+                  </picture>
                   <div class="worck-overlay">
                     <p class="text-overlay">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -137,7 +188,21 @@
             <li class="works-item">
               <a href="#" class="link">
                 <div class="work-thumb">
-                  <img src="./images/img-port-3.jpg" alt="Логотип ресторана" width="370" />
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio/portfolio-3-lg.webp 1x, ./images/portfolio/portfolio-3-lg@2x.webp 2x" type="image/webp" />
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio/portfolio-3-lg.jpg 1x, ./images/portfolio/portfolio-3-lg@2x.jpg 2x" />
+                    <source media="(min-width: 768px)"
+                      srcset="./images/portfolio/portfolio-3-md.webp 1x, ./images/portfolio/portfolio-3-md@2x.webp 2x" type="image/webp" />
+                    <source media="(min-width: 768px)"
+                      srcset="./images/portfolio/portfolio-3-md.jpg 1x, ./images/portfolio/portfolio-3-md@2x.jpg 2x" />
+                    <source media="(max-width: 767px)"
+                      srcset="./images/portfolio/portfolio-3-sm.webp 1x, ./images/portfolio/portfolio-3-sm@2x.webp 2x" type="image/webp" />
+                    <source media="(max-width: 767px)"
+                      srcset="./images/portfolio/portfolio-3-sm.jpg 1x, ./images/portfolio/portfolio-3-sm@2x.jpg 2x" />
+                    <img src="./images/portfolio/portfolio-3-sm.jpg" alt="Портрет человека" />
+                    </picture>
                   <div class="worck-overlay">
                     <p class="text-overlay">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -155,7 +220,21 @@
             <li class="works-item">
               <a href="#" class="link">
                 <div class="work-thumb">
-                  <img src="./images/img-port-4.jpg" alt="Наушники полноразмерные" width="370" />
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio/portfolio-4-lg.webp 1x, ./images/portfolio/portfolio-4-lg@2x.webp 2x" type="image/webp" />
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio/portfolio-4-lg.jpg 1x, ./images/portfolio/portfolio-4-lg@2x.jpg 2x" />
+                    <source media="(min-width: 768px)"
+                      srcset="./images/portfolio/portfolio-4-md.webp 1x, ./images/portfolio/portfolio-4-md@2x.webp 2x" type="image/webp" />
+                    <source media="(min-width: 768px)"
+                      srcset="./images/portfolio/portfolio-4-md.jpg 1x, ./images/portfolio/portfolio-4-md@2x.jpg 2x" />
+                    <source media="(max-width: 767px)"
+                      srcset="./images/portfolio/portfolio-4-sm.webp 1x, ./images/portfolio/portfolio-4-sm@2x.webp 2x" type="image/webp" />
+                    <source media="(max-width: 767px)"
+                      srcset="./images/portfolio/portfolio-4-sm.jpg 1x, ./images/portfolio/portfolio-4-sm@2x.jpg 2x" />
+                    <img src="./images/portfolio/portfolio-4-sm.jpg" alt="Портрет человека" />
+                    </picture>
                   <div class="worck-overlay">
                     <p class="text-overlay">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -174,7 +253,24 @@
             <li class="works-item">
               <a href="#" class="link">
                 <div class="work-thumb">
-                  <img src="./images/img-port-5.jpg" alt="Две коробки" width="370" />
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio/portfolio-5-lg.webp 1x, ./images/portfolio/portfolio-5-lg@2x.webp 2x"
+                      type="image/webp" />
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio/portfolio-5-lg.jpg 1x, ./images/portfolio/portfolio-5-lg@2x.jpg 2x" />
+                    <source media="(min-width: 768px)"
+                      srcset="./images/portfolio/portfolio-5-md.webp 1x, ./images/portfolio/portfolio-5-md@2x.webp 2x"
+                      type="image/webp" />
+                    <source media="(min-width: 768px)"
+                      srcset="./images/portfolio/portfolio-5-md.jpg 1x, ./images/portfolio/portfolio-5-md@2x.jpg 2x" />
+                    <source media="(max-width: 767px)"
+                      srcset="./images/portfolio/portfolio-5-sm.webp 1x, ./images/portfolio/portfolio-5-sm@2x.webp 2x"
+                      type="image/webp" />
+                    <source media="(max-width: 767px)"
+                      srcset="./images/portfolio/portfolio-5-sm.jpg 1x, ./images/portfolio/portfolio-5-sm@2x.jpg 2x" />
+                    <img src="./images/portfolio/portfolio-5-sm.jpg" alt="Портрет человека" />
+                  </picture>
                   <div class="worck-overlay">
                     <p class="text-overlay">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -193,11 +289,24 @@
             <li class="works-item">
               <a href="#" class="link">
                 <div class="work-thumb">
-                  <img
-                    src="./images/img-port-6.jpg"
-                    alt="На мониторе выведена карта мира"
-                    width="370"
-                  />
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio/portfolio-6-lg.webp 1x, ./images/portfolio/portfolio-6-lg@2x.webp 2x"
+                      type="image/webp" />
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio/portfolio-6-lg.jpg 1x, ./images/portfolio/portfolio-6-lg@2x.jpg 2x" />
+                    <source media="(min-width: 768px)"
+                      srcset="./images/portfolio/portfolio-6-md.webp 1x, ./images/portfolio/portfolio-6-md@2x.webp 2x"
+                      type="image/webp" />
+                    <source media="(min-width: 768px)"
+                      srcset="./images/portfolio/portfolio-6-md.jpg 1x, ./images/portfolio/portfolio-6-md@2x.jpg 2x" />
+                    <source media="(max-width: 767px)"
+                      srcset="./images/portfolio/portfolio-6-sm.webp 1x, ./images/portfolio/portfolio-6-sm@2x.webp 2x"
+                      type="image/webp" />
+                    <source media="(max-width: 767px)"
+                      srcset="./images/portfolio/portfolio-6-sm.jpg 1x, ./images/portfolio/portfolio-6-sm@2x.jpg 2x" />
+                    <img src="./images/portfolio/portfolio-6-sm.jpg" alt="Портрет человека" />
+                  </picture>
                   <div class="worck-overlay">
                     <p class="text-overlay">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -215,7 +324,24 @@
             <li class="works-item">
               <a href="#" class="link">
                 <div class="work-thumb">
-                  <img src="./images/img-port-7.jpg" alt="Открытый журнал" width="370" />
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio/portfolio-7-lg.webp 1x, ./images/portfolio/portfolio-7-lg@2x.webp 2x"
+                      type="image/webp" />
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio/portfolio-7-lg.jpg 1x, ./images/portfolio/portfolio-7-lg@2x.jpg 2x" />
+                    <source media="(min-width: 768px)"
+                      srcset="./images/portfolio/portfolio-7-md.webp 1x, ./images/portfolio/portfolio-7-md@2x.webp 2x"
+                      type="image/webp" />
+                    <source media="(min-width: 768px)"
+                      srcset="./images/portfolio/portfolio-7-md.jpg 1x, ./images/portfolio/portfolio-7-md@2x.jpg 2x" />
+                    <source media="(max-width: 767px)"
+                      srcset="./images/portfolio/portfolio-7-sm.webp 1x, ./images/portfolio/portfolio-7-sm@2x.webp 2x"
+                      type="image/webp" />
+                    <source media="(max-width: 767px)"
+                      srcset="./images/portfolio/portfolio-7-sm.jpg 1x, ./images/portfolio/portfolio-7-sm@2x.jpg 2x" />
+                    <img src="./images/portfolio/portfolio-7-sm.jpg" alt="Портрет человека" />
+                  </picture>
                   <div class="worck-overlay">
                     <p class="text-overlay">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -233,7 +359,24 @@
             <li class="works-item">
               <a href="#" class="link">
                 <div class="work-thumb">
-                  <img src="./images/img-port-8.jpg" alt="Бирка с названием проекта" width="370" />
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio/portfolio-8-lg.webp 1x, ./images/portfolio/portfolio-8-lg@2x.webp 2x"
+                      type="image/webp" />
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio/portfolio-8-lg.jpg 1x, ./images/portfolio/portfolio-8-lg@2x.jpg 2x" />
+                    <source media="(min-width: 768px)"
+                      srcset="./images/portfolio/portfolio-8-md.webp 1x, ./images/portfolio/portfolio-8-md@2x.webp 2x"
+                      type="image/webp" />
+                    <source media="(min-width: 768px)"
+                      srcset="./images/portfolio/portfolio-8-md.jpg 1x, ./images/portfolio/portfolio-8-md@2x.jpg 2x" />
+                    <source media="(max-width: 767px)"
+                      srcset="./images/portfolio/portfolio-8-sm.webp 1x, ./images/portfolio/portfolio-8-sm@2x.webp 2x"
+                      type="image/webp" />
+                    <source media="(max-width: 767px)"
+                      srcset="./images/portfolio/portfolio-8-sm.jpg 1x, ./images/portfolio/portfolio-8-sm@2x.jpg 2x" />
+                    <img src="./images/portfolio/portfolio-8-sm.jpg" alt="Портрет человека" />
+                  </picture>
                   <div class="worck-overlay">
                     <p class="text-overlay">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -252,11 +395,21 @@
             <li class="works-item">
               <a href="#" class="link">
                 <div class="work-thumb">
-                  <img
-                    src="./images/img-port-9.jpg"
-                    alt="Ноутбук с открытым приложением"
-                    width="370"
-                  />
+                  <picture>
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio/portfolio-9-lg.webp 1x, ./images/portfolio/portfolio-9-lg@2x.webp 2x" type="image/webp" />
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/portfolio/portfolio-9-lg.jpg 1x, ./images/portfolio/portfolio-9-lg@2x.jpg 2x" />
+                    <source media="(min-width: 768px)"
+                      srcset="./images/portfolio/portfolio-9-md.webp 1x, ./images/portfolio/portfolio-9-md@2x.webp 2x" type="image/webp" />
+                    <source media="(min-width: 768px)"
+                      srcset="./images/portfolio/portfolio-9-md.jpg 1x, ./images/portfolio/portfolio-9-md@2x.jpg 2x" />
+                    <source media="(max-width: 767px)"
+                      srcset="./images/portfolio/portfolio-9-sm.webp 1x, ./images/portfolio/portfolio-9-sm@2x.webp 2x" type="image/webp" />
+                    <source media="(max-width: 767px)"
+                      srcset="./images/portfolio/portfolio-9-sm.jpg 1x, ./images/portfolio/portfolio-9-sm@2x.jpg 2x" />
+                    <img src="./images/portfolio/portfolio-9-sm.jpg" alt="Портрет человека" />
+                    </picture>
                   <div class="worck-overlay">
                     <p class="text-overlay">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -279,13 +432,12 @@
     <!-- Футер -->
     <footer class="footer">
       <div class="container">
-        <div class="left">
-          <!-- Лого + Лінк "Головна сторінка" -->
+        <div class="contact-block">
+    
           <a lang="en" href="./index.html" class="logo_theme-dark logo"><span class="logo__web">Web</span><span
               class="logo_theme-dark">Studio</span>
           </a>
     
-          <!-- Контакти -->
           <address class="footer-address">
             <ul class="list">
               <li>
@@ -337,7 +489,7 @@
         <div class="subscribe">
           <h2 class="title">Подпишитесь на рассылку</h2>
           <div class="botom">
-            <input type="email" name="email" placeholder="E-mail" class="subscribe-input"/>
+            <input type="email" name="email" placeholder="E-mail" class="subscribe-input" />
             <button type="submit" class="button-primary">
               Подписаться
               <svg class="icon" width="24" height="24">
