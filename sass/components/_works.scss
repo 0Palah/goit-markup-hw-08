@@ -24,6 +24,13 @@
     }
 }
 
+.works-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+
 .work-thumb {
     position: relative;
     overflow: hidden;
@@ -58,6 +65,7 @@
 }
 
 .works-card-bottom {
+    flex-grow: 1;
     border: 1px solid var(--works-cards-border-color);
     border-top: none;
     padding: 20px 24px;
