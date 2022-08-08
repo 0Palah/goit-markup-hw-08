@@ -14,7 +14,7 @@
         transition: opacity var(--tran-dur-and-tim-fun), visibility var(--tran-dur-and-tim-fun);
     }
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
         display: none;
     }
 }            
@@ -49,8 +49,12 @@
     display: block;
 }
 
-.mobile-nav__item:not(:last-child) {
-    margin-bottom: 32px;
+.mobile-nav__item {
+
+
+    &:not(:last-child) {
+            margin-bottom: 32px;
+        }
 }
 
 .mobile-nav__link {

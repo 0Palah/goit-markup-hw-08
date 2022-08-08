@@ -12,11 +12,11 @@
 
 .logo_theme-light {
 
-    @media screen and (min-width: $tablet ) {
+    @media screen and (min-width: 768px ) {
         margin-right: 88px;
     }
 
-    @media screen and (min-width: $desktop ) {
+    @media screen and (min-width: 1200px ) {
         margin-right: 93px;
     }
 }
@@ -29,7 +29,7 @@
         background-color: var(--primary-background-color);
     }
 
-    @media screen and (min-width: $tablet ) {
+    @media screen and (min-width: 768px ) {
         display: none;
     }
 }

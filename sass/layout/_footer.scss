@@ -6,7 +6,7 @@
 
     .container {
 
-        @media screen and (min-width: $tablet ) {
+        @media screen and (min-width: 768px ) {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -16,7 +16,7 @@
 
 
 
-        @media screen and (min-width: $desktop ) {
+        @media screen and (min-width: 1200px ) {
             text-align: start;
             flex-direction: row;
             justify-content: start;
@@ -29,7 +29,7 @@
     .contact-block {
         display: block;
 
-        @media screen and (min-width: $desktop ) {
+        @media screen and (min-width: 1200px ) {
             margin-right: 70px;
         }
 
@@ -54,7 +54,7 @@
 .footer-contacts {
     margin-top: 8px;
 
-    @media screen and (min-width: $desktop ) {
+    @media screen and (min-width: 1200px ) {
         margin-top: 9px;
     }
 
@@ -74,11 +74,11 @@
     
     margin-top: 60px;
 
-    @media screen and (min-width: $tablet ) {
+    @media screen and (min-width: 768px ) {
         margin-top: 0;
     }
 
-    @media screen and (min-width: $desktop ) {
+    @media screen and (min-width: 1200px ) {
         margin-right: auto;
     }
 }
@@ -88,7 +88,7 @@
     max-width: 100%;
     margin-top: 60px;
 
-    @media screen and (min-width: $desktop ) {
+    @media screen and (min-width: 1200px ) {
         margin-top: 0;
     }
     
@@ -132,13 +132,13 @@
 
 .subscribe .botom {
    
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 1200px) {
         flex-direction: row;
         width: 570px;
     }
@@ -163,15 +163,15 @@
         width: calc(100vw - 30px);
     }
 
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
         width: 450px;
     }
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 1200px) {
         width: 358px;
     }
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 1200px) {
         margin-bottom: 0;
         margin-right: 12px;
     }

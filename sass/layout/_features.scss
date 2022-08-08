@@ -1,5 +1,5 @@
 .section__features {
-    @media screen and (min-width: $desktop ) {
+    @media screen and (min-width: 1200px ) {
         padding-bottom: 47px;
     }
     
@@ -14,11 +14,11 @@
 .features-list__item {
     width: 100%;
 
-    @media screen and (min-width: $tablet ) {
+    @media screen and (min-width: 768px ) {
         width: calc((100% - 30px) / 2);
     }
 
-    @media screen and (min-width: $desktop ) {
+    @media screen and (min-width: 1200px ) {
         width: calc((100% - 90px) / 4)
     }
 }
@@ -44,7 +44,7 @@
     margin-bottom: 10px;
     text-align: center;
 
-    @media screen and (min-width: $tablet ) {
+    @media screen and (min-width: 768px ) {
         text-align: start;
     }
 }

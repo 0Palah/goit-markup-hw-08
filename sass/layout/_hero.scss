@@ -1,5 +1,5 @@
 .hero {
-    max-width: $mobile;
+    max-width: 480px;
     margin-left: auto;
     margin-right: auto;
     padding: 118px 0;
@@ -20,14 +20,14 @@
     }
 
 
-    @media screen and (min-width: $tablet ) {
-        max-width: $tablet;
+    @media screen and (min-width: 768px ) {
+        max-width: 768px;
         background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
             url(../images/hero/bagraund-md.jpg);
         background-size: cover;
     }
 
-    @media screen and (min-width: $tablet) and (min-device-pixel-ratio: 2),
+    @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -36,7 +36,7 @@
         background-size: cover;
     }
 
-    @media screen and (min-width: $desktop ) {
+    @media screen and (min-width: 1200px ) {
         max-width: 1600px;
         height: 600px;
         padding: 200px 0;
@@ -45,7 +45,7 @@
         background-size: cover;
     }
 
-    @media screen and (min-width: $desktop) and (min-device-pixel-ratio: 2),
+    @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
     (-webkit-min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
@@ -71,7 +71,7 @@
     text-transform: uppercase;
     color: var(--text-white-color);
 
-    @media screen and (min-width: $desktop ) {
+    @media screen and (min-width: 1200px ) {
         max-width: 696px;
         @include font(44px, 900, 60px);
     }

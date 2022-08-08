@@ -17,11 +17,11 @@
     border-radius: 0px 0px 4px 4px;
 
 
-    @media screen and (min-width: $tablet ) {
+    @media screen and (min-width: 768px ) {
         width: calc((100% - 30px) / 2);
     }
 
-    @media screen and (min-width: $desktop ) {
+    @media screen and (min-width: 1200px ) {
         width: calc((100% - 90px) / 4);
     }
     
@@ -30,7 +30,7 @@
 .team-card-bottom {
     padding: 30px 15px 24px;
 
-    @media screen and (min-width: $desktop ) {
+    @media screen and (min-width: 1200px ) {
         padding: 30px 15px;
     }
 }
