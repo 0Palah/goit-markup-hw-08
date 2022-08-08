@@ -1,11 +1,11 @@
 .header {
     border-bottom: 1px solid var(--header-border-color);
+}
 
-    .container {
-        display: flex;
-        align-items: center;
-        height: 76px;
-    }
+.header-container {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
 }
 
 .logo_theme-light {
