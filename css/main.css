@@ -322,6 +322,12 @@ img {
   display: block;
 }
 
+.mobile-nav__link {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.18;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -698,7 +704,11 @@ img {
 .header-container {
   display: flex;
   align-items: center;
-  padding: 10px 0;
+}
+@media screen and (max-width: 767px) {
+  .header-container {
+    padding: 10px 10px;
+  }
 }
 
 @media screen and (min-width: 768px) {

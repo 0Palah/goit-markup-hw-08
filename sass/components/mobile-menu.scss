@@ -49,3 +49,11 @@
     display: block;
 }
 
+.mobile-nav__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.mobile-nav__link {
+    @include font(40px, 500, 47px);
+    color: var(--primary-text-color);
+}
