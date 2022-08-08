@@ -18,3 +18,20 @@
         margin-right: 93px;
     }
 }
+
+.open-mobile-menu-btn {
+    
+    @media screen and (max-width: 767px) {
+        padding: 0;
+        border: none;
+        background-color: var(--primary-background-color);
+    }
+
+    @media screen and (min-width: $tablet ) {
+        display: none;
+    }
+}
+
+.open-mobile__icon {
+    display: block;
+}

@@ -120,10 +120,17 @@ img {
   color: var(--logo-black-color);
   text-decoration: none;
   font-family: var(--logo-font-family-text);
-  font-size: 26px;
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.19;
+  line-height: 1.17;
   letter-spacing: 0.03em;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+  }
 }
 
 .logo__web {
@@ -261,6 +268,30 @@ img {
 }
 .button-primary:hover, .button-primary:focus {
   background-color: var(--button-hover-color);
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-background-color);
+  overflow: auto;
+  z-index: 100;
+}
+
+.mobile-menu__container {
+  position: relative;
+}
+
+.mobile-menu__close-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
 }
 
 .backdrop {
@@ -647,6 +678,23 @@ img {
   .logo_theme-light {
     margin-right: 93px;
   }
+}
+
+@media screen and (max-width: 767px) {
+  .open-mobile-menu-btn {
+    padding: 0;
+    border: none;
+    background-color: var(--primary-background-color);
+  }
+}
+@media screen and (min-width: 768px) {
+  .open-mobile-menu-btn {
+    display: none;
+  }
+}
+
+.open-mobile__icon {
+  display: block;
 }
 
 .hero {
