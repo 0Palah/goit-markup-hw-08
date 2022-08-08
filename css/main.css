@@ -300,6 +300,15 @@ img {
   }
 }
 
+.mobile-menu__container {
+  width: 100%;
+  max-height: 796px;
+  height: 100%;
+  letter-spacing: 0.02em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 @media screen and (max-width: 767px) {
   .mobile-menu__container {
     position: relative;
@@ -331,6 +340,52 @@ img {
   font-weight: 500;
   line-height: 1.18;
   color: var(--primary-text-color);
+}
+
+.mobile-nav__link_current {
+  color: var(--accent-color);
+}
+
+.mobile-contacts-nav {
+  margin-bottom: 64px;
+}
+
+.mobile-contacts-nav__item_tel {
+  margin-bottom: 32px;
+}
+
+.mobile-contacts-nav__link_tel {
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.18;
+  color: var(--accent-color);
+}
+
+.mobile-contacts-nav__link_mail {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.17;
+  color: var(--secondary-text-color);
+}
+
+.mobile-social {
+  display: flex;
+}
+
+.mobile-social__item {
+  display: block;
+  padding-right: 10px;
+}
+.mobile-social__item:not(:first-child) {
+  padding: 0 10px;
+  border-left: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile-social__link {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.22;
+  color: var(--accent-color);
 }
 
 .backdrop {
