@@ -737,12 +737,27 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
-  padding: 63px 24px;
+  padding: 77px 24px;
   transform: translateY(100%);
   transition: transform var(--tran-dur-and-tim-fun);
 }
 .works-item:hover .worck-overlay, .works-item:focus-within .worck-overlay {
   transform: translateY(0);
+}
+@media screen and (max-width: 410px) {
+  .worck-overlay {
+    padding: 30px 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .worck-overlay {
+    padding: 49px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .worck-overlay {
+    padding: 63px 24px;
+  }
 }
 
 .text-overlay {
@@ -753,6 +768,13 @@ img {
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: #FFFFFF;
+}
+@media screen and (max-width: 410px) {
+  .text-overlay {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.57;
+  }
 }
 
 .works-card-bottom {
