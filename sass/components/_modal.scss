@@ -2,9 +2,9 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 96%;
+    width: 98%;
     max-width: 450px;
-    height: 96%;
+    height: 98%;
     max-height: 609px;
     padding: 40px;
     overflow: auto;
@@ -14,6 +14,10 @@
     transform: translate(-50%, -50%) scale(1);
 
     transition: transform var(--tran-dur-and-tim-fun), visibility var(--tran-dur-and-tim-fun);
+
+    @media screen and (max-width: 410px) {
+        padding: 35px;
+    }
 
     .backdrop.is-hidden & {
         transform: translate(-50%, -50%) scale(0.8);
@@ -28,13 +32,16 @@
 }
 
 .modal-title {
+    @media screen and (max-width: 410px) {
+        @include font(18px, 700, 26px);
+    }
+
     text-align: center;
     margin-bottom: 12px;
     @include font(20px, 700, 30px);
 
     @media screen and (min-width: 1200px ) {
-        @include font(20px, 700, 23px);
-            
+        @include font(20px, 700, 23px);   
     }
 }
 

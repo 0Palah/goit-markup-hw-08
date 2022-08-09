@@ -90,7 +90,6 @@
 .mobile-contacts-nav__link_tel {
     @media screen and (max-width: 410px) {
         @include font(27px, 500, 34px);
-
     }
 
     @include font(34px, 500, 40px);
